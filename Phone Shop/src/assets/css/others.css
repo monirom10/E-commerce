@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    /* background-color: blue; */
+}
+.other-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #EEEEEE;
+    padding-top: 104px;
+    display: flex;
+    justify-content: center;
+}
+.other-container .other-content{
+    width: 85%;
+    height: 580px;
+    background-color: blue;
+}
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}

@@ -1,0 +1,34 @@
+
+.container-login{
+    width: 480px;
+    height: 450px;
+    /* background-color: gray; */
+    padding: 20px 30px;
+    border: 2px solid rgba(129, 124, 124, 0.616);
+    align-items: center;
+    margin: 10% auto;
+    padding-top: 170px;
+}
+.container-login .image{
+    width: 170px;
+    height: 170px;
+}
+.container-login img{
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: 30%;
+}
+.text{
+    font-size: 15px;
+    position: relative;
+}
+.text p{
+    right: 735px;
+    top: 5px;
+}
+.text h4{
+    right: 440px;
+    font-size: 15px;
+    bottom: 27px;
+}

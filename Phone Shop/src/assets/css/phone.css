@@ -1,0 +1,79 @@
+.phone-container{
+    width: 100%;
+    /* height: 900px; */
+    /* background-color: blue; */
+    margin-top: 105px;
+    margin-bottom: 10px;
+}
+.phone-container .phone-detail{
+    width: 85%;
+    height: auto;
+    background-color: #EEEEEE;
+    margin: auto;
+    border-radius: 10px;
+    /* padding: 0px 5px 0px 5px; */
+    box-shadow: 2px 5px 5px -3px rgba(0,0,0,0.75);
+}
+.phone-container .phone-detail .phone-content{
+    width: 100%;
+    height: 250px;
+    background-color: orange;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, rgba(236,80,104,1) 40%, rgba(125,156,247,1) 90%);
+    display: flex;  
+    transition: all 0.5s;
+}
+
+/* @iphone-content */
+.phone-detail .phone-content .title-content{
+    width: 40%;
+    height: 100%;
+    /* background-color: blue; */
+    padding-top: 20px;
+    padding-left: 35px;
+    color: white;
+}
+
+/* @title */
+.title-phone h1{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+.title-phone p{
+    font-size: 18px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+/* @image */
+.phone-detail .phone-content .image-content{
+    width: 60%;
+    height: 100%;
+    /* background-color: green; */
+    padding-top: 20px;
+    transition: all 0.5s;
+}
+.img{
+    width: 400px;
+    height: 95%;
+    /* background-color: yellow; */
+    margin-left: 280px;
+}
+/* @hover */
+.phone-content:hover{
+    transform: scale(0.98);
+    transition: all 0.5s;
+    box-shadow: 4px 4px 9px -3px rgba(0,0,0,1);
+}
+.title-phone:hover{
+    color: #000;
+    transition: all 0.5s;
+}
+.image-content:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
