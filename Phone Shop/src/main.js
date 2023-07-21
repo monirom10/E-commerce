@@ -12,6 +12,8 @@ import './assets/css/phone.css'
 import './assets/css/card.css'
 import './assets/css/others.css'
 import './assets/css/detail.css'
+import './assets/css/checkout.css'
+import './assets/css/register.css'
 
 import '@fortawesome/fontawesome-free/css/all.css';
 

@@ -34,7 +34,8 @@
                     <input class="w-20 h-6 mt-0.2 rounded-lg text-sm text-center" type="text" placeholder="Search">
                   </li>
                   <li class="menu-item">
-                    <a class="" href="/login">LogIn</a>
+                    <a class="" v-if="!isLoggedIn" href="/login">Login</a>
+                    <a class="" v-else @click="handleLogout" href="/login">Logout</a>
                   </li>
                 </ul>
               </div>
@@ -49,10 +50,21 @@
 </template>
 <script>
 export default {
+  data(){
+    return {
+      isloggedIn: false
+    };
+  },
   methods: {
     isRouteActive(route) {
       return this.$route.path === route;
+    },
+    handleLogout(){
+      this.isloggedIn = false;
     }
+  },
+  mounted(){
+    this.isLoggedIn = true;
   }
 };
 </script>

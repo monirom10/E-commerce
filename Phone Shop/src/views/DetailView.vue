@@ -2,78 +2,70 @@
     <div class="detail-container">
         <div class="detail-content">
             <!-- @top -->
-            <div class="detail-content-top">
-                <!-- @left -->
-                <div class="detail-content-top-left">
-                    <!-- @img-size -->
-                    <div class="detail-content-phone-size">
-                        <img src="../assets/image/ip-14p-de-c1.png" alt="">
-                    </div>
-                    <div class="detail-content-phone-color">
-                        <!-- @1 -->
-                        <div class="phone-color-box">
-                            <img src="../assets/image/ip-14p-de-c1.png" alt="">
+                <div class="detail-content-top">
+                    <!-- @left -->
+                    <div class="detail-content-top-left">
+                        <!-- @img-size -->
+                        <div class="detail-content-phone-size">
+                            <img :src="selectedImage" alt="big">
                         </div>
-                        <!-- @2 -->
-                        <div class="phone-color-box">
-                            <img src="../assets/image/ip-14p-de-c2.png" alt="">
-                        </div>
-                        <!-- @3 -->
-                        <div class="phone-color-box">
-                            <img src="../assets/image/ip-14p-de-c3.png" alt="">
+                        <div class="detail-content-phone-color">
+                            <div v-for="(image, index) in images" :key="index" class="phone-color-box" :class="{ active: selectedImage === image }" @click="changeImage(image)">
+                                <img :src="image" alt="small">
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- @right -->
-                <div class="detail-content-top-right">
-                    <!-- @title -->
-                    <div class="detail-content-title">
-                        <h1>iPhone 14 Pro Max</h1>
+                    <!-- @right -->
+                    <div class="detail-content-top-right">
+                        <!-- @title -->
+                        <div class="detail-content-title">
+                            <h1>iPhone 14 Pro Max</h1>
+                        </div>
+                        <hr>
+                        <!-- @storage -->
+                        <div class="detail-content-storage">
+                            <label for="storage">Choose Storage: </label>
+                            <select name="phone" id="storage">
+                            <option value="">128G</option>
+                            <option value="">256G</option>
+                            <option value="">512G</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <!-- @phone-color -->
+                        <div class="detail-content-color">
+                            <label for="color">Choose Color: </label>
+                            <select name="color" id="color">
+                            <option value="">Gold</option>
+                            <option value="">White</option>
+                            <option value="">Black</option>
+                            <option value="">Deep Blue</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <!-- @quantity -->
+                        <div class="detail-content-quantity">
+                            <label for="storage">Quantity: </label>
+                            <select name="phone" id="storage">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <!-- @price -->
+                        <div class="detail-content-price">
+                            <label>Price</label>
+                            <h1 style="color: black;">1450$</h1>
+                        </div>
+                        <RouterLink to="/card">
+                            <button>Add To Card</button>
+                        </RouterLink>
                     </div>
-                    <hr>
-                    <!-- @storage -->
-                    <div class="detail-content-storage">
-                        <label for="storage">Choose Storage: </label>
-                        <select name="phone" id="storage">
-                        <option value="">128G</option>
-                        <option value="">256G</option>
-                        <option value="">512G</option>
-                        </select>
-                    </div>
-                    <hr>
-                    <!-- @phone-color -->
-                    <div class="detail-content-color">
-                        <label for="color">Choose Color: </label>
-                        <select name="color" id="color">
-                        <option value="">Gold</option>
-                        <option value="">White</option>
-                        <option value="">Deep Blue</option>
-                        </select>
-                    </div>
-                    <hr>
-                    <!-- @quantity -->
-                    <div class="detail-content-quantity">
-                        <label for="storage">Quantity: </label>
-                        <select name="phone" id="storage">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        </select>
-                    </div>
-                    <hr>
-                    <!-- @price -->
-                    <div class="detail-content-price">
-                        <label>Price</label>
-                        <h1 style="color: black;">1450$</h1>
-                    </div>
-                    <RouterLink to="/card">
-                        <button>Add To Card</button>
-                    </RouterLink>
                 </div>
-            </div>
 
             <!-- @related-product -->
             <div class="detail-content-bottom">
@@ -123,3 +115,25 @@
         </div>
     </div>
 </template>
+
+<script>
+    export default{
+        data() {
+            return {
+                images: [
+                    "/src/assets/image/ip-14p-de-c1.png",
+                    "/src/assets/image/ip-14p-de-c2.png",
+                    "/src/assets/image/ip-14p-de-c3.png",
+                    "/src/assets/image/ip-14p-de-c4.png"
+                ],
+                selectedImage: "/src/assets/image/ip-14p-de-c1.png",
+            };
+        },
+        methods: {
+            changeImage(image) {
+                this.selectedImage = image;
+            }
+        }
+    }
+
+</script>

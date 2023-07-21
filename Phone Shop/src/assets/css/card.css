@@ -5,24 +5,100 @@
 }
 body{
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     /* background-color: blue; */
 }
 .card-container{
     width: 100%;
-    height: 100vh;
+    /* height: 100%; */
+    min-height: 130vh;
     background-color: #EEEEEE;
     padding-top: 104px;
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .card-container .card-content{
     width: 85%;
-    height: 580px;
-    background-color: orange;
+    /* height: 580px; */
+    /* background-color: orange; */
+    display: flex;
 }
-h1{
-    font-size: 50px;
+/* @checkout-content */
+.card-content-left{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 5px -3px rgba(0,0,0,0.49);
+}​
+.card-content-left hr{
+   height: 2px;
+}
+.card-content-left h1{
+    font-size: 30px;
+    color: black;
+    padding-bottom: 10px;
+}
+.card-content-left th{
+    padding: 10px 105px;
+    font-size: 20px;
     font-weight: bold;
-    color: white;
+}
+.product-content{
+    width: 100%;
+    height: 130px;
+    /* background-color: orange; */
+    margin-top: 10px;
+    display: flex;
+}
+.product-content:hover{
+    background-color: #D8D8D8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* @img */
+.product-content .product-content-image{
+    width: 25%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+}
+.product-content .product-content-image img{
+    width: 90%;
+    height: 100%;
+}
+
+/* @description */
+.product-content .product-content-description{
+    width: 25%;
+    height: 100%;
+    /* background-color: red; */
+    padding-top: 20px;
+}
+.product-content .product-content-description h1{
+    font-size: 17px;
+    font-family: 'Roboto';
+    text-align: center;
+}
+/* @price */
+.product-content .product-content-price{
+    width: 25%;
+    height: 100%;
+    /* background-color: blue; */
+    padding-top: 60px;
+}
+.product-content .product-content-price h1{
+    font-size: 17px;
+    font-family: 'Roboto';
+    text-align: center;
+}
+/* @checkout */
+.product-content .product-content-checkout{
+    width: 25%;
+    height: 100%;
+    /* background-color: crimson; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

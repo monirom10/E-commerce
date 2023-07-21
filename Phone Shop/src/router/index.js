@@ -5,9 +5,12 @@ import Samsung from '../views/Samsung.vue';
 import Oppo from '../views/Oppo.vue';
 import Huawei from '../views/Huawei.vue';
 import Login from '../views/Login.vue';
+import Logout from '../views/Logout.vue';
+import Register from '../views/Register.vue';
 import Card from '../views/Card.vue';
 import Others from '../views/Others.vue';
 import Detail from '../views/DetailView.vue';
+import Checkout from '../views/Checkout.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -53,9 +56,24 @@ const router = createRouter({
       component: Card
     },
     {
+      path: '/checkout',
+      name: 'checkout',
+      component: Checkout
+    },
+    {
       path: '/login',
       name: 'login',
       component: Login
+    },
+    {
+      path: '/logout',
+      name: 'logout',
+      component: Logout
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: Register
     }
   ]
 })

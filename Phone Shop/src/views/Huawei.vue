@@ -6,12 +6,12 @@
     <!-- @body -->
         
     <div class="phone-container">
-  <div class=" header-type-2">
-      <h1 class="header-card-2" >Huawie<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <div class=" header-type-4">
+      <h1 class="header-card-4" >Huawie<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
         </svg>
       </h1> 
-      <div class="traingle-2"></div>
+      <div class="traingle-4"></div>
   </div>
   
   <div class="phone-detail">
