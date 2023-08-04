@@ -62,7 +62,7 @@
                             <h1 style="color: black;">1450$</h1>
                         </div>
                         <RouterLink to="/card">
-                            <button>Add To Card</button>
+                            <button @click="addToCart">Add To Card</button>
                         </RouterLink>
                     </div>
                 </div>
@@ -133,7 +133,16 @@
             changeImage(image) {
                 this.selectedImage = image;
             }
-        }
+        },
+        addToCart() {
+            // Show SweetAlert with success message
+            Swal.fire({
+                icon: 'success',
+                title: 'Added to Cart!',
+                showConfirmButton: false,
+                timer: 1500, // Auto close after 1.5 seconds
+            });
+        },
     }
 
 </script>

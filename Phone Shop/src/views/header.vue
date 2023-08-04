@@ -33,9 +33,15 @@
                   <li class="menu-item">
                     <input class="w-20 h-6 mt-0.2 rounded-lg text-sm text-center" type="text" placeholder="Search">
                   </li>
-                  <li class="menu-item">
-                    <a class="" v-if="!isLoggedIn" href="/login">Login</a>
-                    <a class="" v-else @click="handleLogout" href="/login">Logout</a>
+                  <li class="menu-item flex">
+                    <!-- <a class="" v-if="!isLoggedIn" href="/login">Login</a>
+                    <a class="" v-else @click="handleLogout" href="/login">Logout</a> -->
+                    <button class="w-20 pr-1 pl-1 rounded-md bg-green-700">
+                      <a href="/register">Sign Up</a>
+                    </button>
+                    <button class="pr-2 pl-2 ml-3 rounded-md bg-red-700">
+                      <a href="/logout">Logout</a>
+                    </button>
                   </li>
                 </ul>
               </div>

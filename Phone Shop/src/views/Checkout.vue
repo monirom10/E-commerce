@@ -271,7 +271,7 @@
                             <img src="../assets/image/profile-vue.png" alt="">
                         </div>     
                         <div class="user-name">
-                            <h1>Thank you Vin Da!</h1>
+                            <h1>Thank you John!</h1>
                             <h1>For choosing me.</h1>
                         </div>    
                     </div>

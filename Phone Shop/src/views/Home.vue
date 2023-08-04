@@ -162,12 +162,12 @@ export default {
           products: [
             { id: 1, name: "iPhone 14", price: "1080$ ~ 1250$", image: "/src/assets/image/ip-14s.png" },
             { id: 2, name: "iPhone 14 Pro Max", price: "1080$ ~ 1250$", image: "/src/assets/image/ip-14-pro.png" },
-            { id: 3, name: "iPhone 13 Pro Max", price: "1080$ ~ 1250$", image: "/src/assets/image/ip-13-pro.png" },
-            { id: 4, name: "iPhone 13", price: "1080$ ~ 1250$", image: "/src/assets/image/ip-13.png" },
-            { id: 5, name: "iPhone 12 Pro Max", price: "1080$ ~ 1250$", image: "/src/assets/image/ip-12-pro.png" },
-            { id: 6, name: "iPhone 13 Pro Max", price: "1080$ ~ 1250$", image: "/src/assets/image/ip-14-pro.png" },
-            { id: 7, name: "iPhone 14 Pro Max", price: "1080$ ~ 1250$", image: "/src/assets/image/ip-14-pro.png" },
-            { id: 8, name: "iPhone 13 Pro Max", price: "1080$ ~ 1250$", image: "/src/assets/image/ip-14-pro.png" }
+            { id: 3, name: "iPhone 13", price: "1080$ ~ 1250$", image: "/src/assets/image/ip-13-pro.png" },
+            { id: 4, name: "iPhone 13 Pro Max", price: "1080$ ~ 1250$", image: "/src/assets/image/ip-13.png" },
+            { id: 5, name: "iPhone 12", price: "1080$ ~ 1250$", image: "/src/assets/image/ip-12-pro.png" },
+            { id: 6, name: "iPhone 12 Pro Max", price: "1080$ ~ 1250$", image: "/src/assets/image/ip-14-pro.png" },
+            { id: 7, name: "iPhone 11", price: "1080$ ~ 1250$", image: "/src/assets/image/ip-14-pro.png" },
+            { id: 8, name: "iPhone 11 Pro Max", price: "1080$ ~ 1250$", image: "/src/assets/image/ip-14-pro.png" }
           ]
         },
         {
